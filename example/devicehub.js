@@ -1,21 +1,18 @@
 /**
  * Created by Mihai on 7/23/2015.
  */
-/*
-/////////////////////////////////////////////////////
-START CONFIGURATION SECTION
-VERY IMPORTANT! SET YOUT API KEY AND PROJECT ID HERE!
-/////////////////////////////////////////////////////
- */
-var PROJECT_ID=4655;
-var API_KEY="249cc882-ba23-4ad7-993f-26258e36203f";
-var DEVICE_UUID="f5d1e3ab-210b-4e53-99d4-ee75cc843f4d";
-/*
-/////////////////////////////////////////////////////////
-END CONFIGURATION SECTION
-/////////////////////////////////////////////////////////
- */
-/////NO EDIT ZONE //////
+
+
+var PROJECT_ID="";
+var API_KEY="";
+var DEVICE_UUID="";
+
+function DeviceHubInit(prj_id,api,uuid)
+{
+	PROJECT_ID=prj_id;
+	API_KEY=api;
+	DEVICE_UUID=uuid;
+}
 function Sensor (sensor_name) {
     this.sensor_name = sensor_name;
     this.meta={};

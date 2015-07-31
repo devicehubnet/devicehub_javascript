@@ -1,21 +1,18 @@
 /**
  * Created by Mihai on 7/23/2015.
  */
-/*
-/////////////////////////////////////////////////////
-START CONFIGURATION SECTION
-VERY IMPORTANT! SET YOUT API KEY AND PROJECT ID HERE!
-/////////////////////////////////////////////////////
- */
+
+
 var PROJECT_ID="";
 var API_KEY="";
 var DEVICE_UUID="";
-/*
-/////////////////////////////////////////////////////////
-END CONFIGURATION SECTION
-/////////////////////////////////////////////////////////
- */
-/////NO EDIT ZONE //////
+
+function DeviceHubInit(prj_id,api,uuid)
+{
+	PROJECT_ID=prj_id;
+	API_KEY=api;
+	DEVICE_UUID=uuid;
+}
 function Sensor (sensor_name) {
     this.sensor_name = sensor_name;
     this.meta={};
